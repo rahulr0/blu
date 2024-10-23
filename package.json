@@ -1,0 +1,37 @@
+{
+  "name": "blu",
+  "displayName": "bluAI",
+  "description": "a code assistant",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:blu.askBlu",
+    "onCommand:blu.openChatPanel"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "blu.askBlu",
+        "title": "Ask Blu"
+      },
+      {
+        "command": "blu.openChatPanel",
+        "title": "Open Blu Chat"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
