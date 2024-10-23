@@ -1,1 +1,1 @@
-blu - ai code assistant
+blu - a vscode ai code assistant
